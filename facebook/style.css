@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin:0;
+}
+.heading{
+    margin-left:500px;
+    color:white;
+    font-size: 40px;
+    float:left;
+    margin-top: -15px;
+}
+.navbar{
+    background-color:#3B5998;
+    padding:45px 0px;
+}
+.nav-input{
+    float: right;
+    margin-right: 400px;
+    margin-top:-25px;
+    color: white
+}
+.left{
+    float:left;
+    width:500px;
+    margin-top:50px;
+    margin-left:400px;
+}
+.right{
+    float:right;
+    width:700px;
+    margin-right:200px;
+    margin-top:40px;
+}
+body{
+    background-color: #EFF1F7;
+}
+.create{
+    font-size: 40px;
+}
+.input-small{
+    width: 150px;
+    height:35px;
+    border-radius:5px;
+    margin:1px;
+}
+.input-large{
+    width: 300px;
+    height:35px;
+    border-radius:5px;
+    margin:1px;
+}
