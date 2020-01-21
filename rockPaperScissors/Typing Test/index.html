@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Typing test</title>
+    <script type="text/javascript">
+        let str = `hello welcome to programing programing`
+        let speed = 0;
+        let date = new Date()
+        let time = date.getMinutes()
+        
+          test=(value)=>{
+        let string =''
+           speed += 1;
+        console.log(time);
+        let timePassed = 1
+
+            
+            for (var i = 0; i < str.length; i++) {
+           
+
+               if(value[i] == str.charAt(i) ){
+                   console.log('success');
+                   
+               string += value[i]
+               document.getElementById('text1').innerHTML = string;   
+               timePassed = date.getMinutes() - time + 1 
+               let speed =   ((i *5)/60).toString()
+               document.getElementById('speed').innerHTML = speed ;  
+
+               }
+              
+
+           }
+               
+               
+            }
+        
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container bg-dark text-white p-5 ">
+            <h2>Typing Test</h2> <span>speed: <p id='speed'></p></span>
+            <form id = "form">
+                    <p class="border border-success p-1 w-75 ml-5">->hello to programing</p>
+                    <p id='text1' class="text-warning border border-success w-75 p-1 ml-5">-></p>
+                    <input type="text" class="form-group pb-5 w-100"  id='typing' oninput="test(this.value)">
+            </form>
+
+        </div>
+    </div>
+   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

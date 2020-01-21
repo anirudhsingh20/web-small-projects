@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Asap|Asap+Condensed:400i&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #333;
+    font-family: 'Asap', sans-serif;
+}
+header{
+    background-color: beige;
+    
+}
+header > h1{
+    color:black;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Asap', sans-serif;
+}
+.score{
+    color: antiquewhite;
+    border: whitesmoke solid 3px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 70px auto;
+    width:300px;
+    height: 100px;
+    padding: 20px 25px;
+    position: relative;
+    font-size: 30px;
+    
+
+}
+.badge{
+    background-color: tomato;
+}
+#userPosition{
+    position: absolute;
+    margin-left: -70px;
+    padding: 2px 15px;
+    border: whitesmoke solid 1px;
+    border-radius: 4px;
+
+}
+#compPosition{
+    position: absolute;
+    margin-left: +220px;
+    padding: 2px 15px;
+    border: whitesmoke solid 1px;
+    border-radius: 4px;
+
+    
+}
+.result{
+    color : white;
+    text-align: center;
+    padding: 50px auto;
+    margin: 50px auto;
+    font-size: 40px;
+    font-family: 'Asap', sans-serif;
+
+
+}
+.choices {
+    text-align: center;
+
+    
+    
+}
+.select{
+    display: inline-block;
+    border: black solid 1px;
+    border-radius: 50%;
+    padding:8px;
+    margin:auto 10px;
+   
+
+}
+.select:hover{
+   
+    background-color: #222;
+}
+.select img {
+    border: black solid 1px;
+    border-radius: 50%;
+    width:200px;
+    height: 200px;
+}
+.select:hover{
+    opacity: 0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.green-glow{
+    border:#4dcc7d solid 4px;
+    box-shadow:0 0 10px rgb(23, 216, 23); 
+}
+.red-glow{
+    border : rgb(214, 42, 42) solid 4px;
+    box-shadow: 0 0 10px rgb(245, 4, 4);
+}
+.gray-glow{
+    border: gray solid 4px;
+    box-shadow: 0 0 10px rgb(192, 191, 191);
+}
+.move{
+    text-align: center;
+    color: #fff;
+    font-family: 'Asap', sans-serif;
+}
